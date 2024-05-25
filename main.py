@@ -2,6 +2,7 @@ import sys
 import os
 
 def main():
+    #returns path when cmd entered example type ls returns ls is usr/bin/ls
     known_cmd = {"echo", "exit", "type"}
     paths = os.getenv("PATH").split(":")
 
