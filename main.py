@@ -12,7 +12,7 @@ def main():
 
         if command.startswith("type"):
             newkey = command_args[1]
-
+#checks if its in the list or not
             if newkey in known_cmd:
                 print(f"{newkey} is a shell builtin")
             else:
@@ -25,7 +25,7 @@ def main():
                         break
                 if not found_cmd:
                     print(f"{newkey} not found")
-
+     #echo builtin
         elif command.startswith("echo"):
             print(' '.join(command_args[1:]))
 
